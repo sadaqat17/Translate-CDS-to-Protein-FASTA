@@ -1,80 +1,49 @@
-# Translate CDS to Protein FASTA
+Translate CDS to Protein FASTA
 
 ## Overview
-This Python script translates coding sequences (CDS) from a FASTA file into protein sequences. The script supports **command-line arguments** for input/output files and includes **tab completion** for file selection.
-
+This Python script translates coding sequences (CDS) from a FASTA file into protein sequences.
 ## Features
-- Reads **CDS sequences** from a FASTA file.
-- Translates the sequences into **protein sequences**.
-- Writes the **protein sequences** to an output FASTA file.
-- Supports **tab completion** for file selection.
-- Uses **Biopython** for sequence processing.
+- Reads CDS sequences from a FASTA file.
+- Translates the sequences into protein sequences.
+- Writes the protein sequences to an output FASTA file.
+- Supports tab completion for file selection.
+- Uses Biopython for sequence processing.
 
 ## Requirements
-Ensure you have **Python 3** installed. Check your Python version:
+Ensure you have Python 3 installed. Check your Python version:
 
-```bash
+bash
 python3 --version
-```
+
 
 ### Install Dependencies
 Install the required Python libraries using:
 
-```bash
+bash
 pip install biopython argparse glob pyreadline3
-```
-
-For **Linux/macOS**, `readline` is pre-installed. For **Windows**, you may need:
-
-```bash
-pip install pyreadline3
-```
 
 ## Installation
 Clone the repository and navigate to the project directory:
 
-```bash
-git clone https://github.com/yourusername/translate-cds.git
+bash
+git clone https://github.com/sadaqat17/Translate-CDS-to-Protein-FASTA.git
 cd translate-cds
-```
 
 Make the script executable (optional on Linux/macOS):
 
-```bash
+bash
 chmod +x translate_cds.py
-```
+
 
 ## Usage
 Run the script from the command line:
 
-```bash
+bash
 python translate_cds.py -i input_cds.fa -o output_protein.fa
-```
 
-### **Example:**
-```bash
+### Example:
+bash
 python translate_cds.py -i cds.fa -o protein.fa
-```
-
-#### **Tab Completion for File Selection:**
-If your file is named `cds.fa`, you can type:
-```bash
-python translate_cds.py -i c<TAB>
-```
-And it will auto-complete the filename.
-
-## Troubleshooting
-**1. `ModuleNotFoundError: No module named 'Bio'`**
-   - Install Biopython using:
-     ```bash
-     pip install biopython
-     ```
-
-**2. Tab completion not working on Windows?**
-   - Install `pyreadline3`:
-     ```bash
-     pip install pyreadline3
-     ```
 
 🚀 **Happy Translating!** 🚀
 
